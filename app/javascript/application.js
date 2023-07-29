@@ -3,3 +3,5 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import 'cocoon'
 import "stylesheets/organizador"
+//= require jquery
+//= require jquery_ujs

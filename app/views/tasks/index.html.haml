@@ -1,5 +1,6 @@
 %h1 Listing tasks
 
+
 %table
   %thead
     %tr
@@ -17,10 +18,10 @@
         %td= task.name
         %td= task.description
         %td= task.due_date
-        %td= task.category
+        %td= task.category.name
         %td= link_to 'Show', task
         %td= link_to 'Edit', edit_task_path(task)
-        %td= link_to 'Destroy', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= button_to 'Destroy', task, :method => :delete
 
 %br
 

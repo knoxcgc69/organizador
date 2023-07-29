@@ -10,12 +10,12 @@ en:
         others: Tareas
   categories:
     form:
-      description: Description
-      name: Name
+      description: Descripcion
+      name: Nombre
       submit: Submit
     new:
       categories:
-        new_category: New category
+        new_category: Nueva Categoria
     new_category: Nueva Categoria
   common:
     back: atrás
@@ -25,20 +25,20 @@ en:
     hello: Hello world
     tasks:
       form:
-        description: Descripzion
+        description: Descripción..
         name: Nombre.
-  description: Description
+  description: Descripción
   hello: Hello world
-  name: Name
+  name: Nombre
   task:
     errors:
-      invalid_due_date: Invalid due date
+      invalid_due_date: Fecha invalida.
   tasks:
     form:
       category: Categoria.
-      description: Description
+      description: Descripcion
       fecha_vencimiento: Fecha vencimiento
-      name: Name
+      name: Nombre
     new:
       task:
-        new_task: New task
+        new_task: Nueva tarea
