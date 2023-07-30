@@ -19,7 +19,7 @@ class Task < ApplicationRecord
   validates :name, :description, presence: true 
   validates :name, uniqueness: true
   validate :due_date_validity
-
+  validates :name, uniqueness: { case_sensitive: false }
   accepts_nested_attributes_for :participating_users, allow_destroy: true
 
   def due_date_validity
