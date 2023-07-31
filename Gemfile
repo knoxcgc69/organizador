@@ -60,6 +60,7 @@ group :development, :test do
   gem "devise"
   gem 'jquery-rails'
   gem "cocoon"
+  gem "cancancan"
 end
 
 group :development do

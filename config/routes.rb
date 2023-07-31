@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :tasks
   resources :categories
+  
+  root "tasks#index"
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
@@ -10,3 +12,4 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 end
+  
