@@ -8,13 +8,14 @@
     = f.input :description, label: t(".description")
     = f.input :due_date, label: t(".fecha_vencimiento")
     = f.association :category, label: t(".category")
+
     #addParticipants
-      =link_to_add_association f, :participating_users, "data-asocciation-insertion-node" => ".participants .participants-container","data-turbolinks" => false do  
-        agregar participante
-    .participants
+      =link_to_add_association f, :participating_users, "data-asocciation-insertion-node" => ".participants .participants-container", "data-turbolinks" => false do  
+        Agregar Participante a la Tarea
+      .participants
       = f.simple_fields_for :participating_users do |g|
         = render "participating_user_fields", f: g
-        .participants-container 
+      .participants-container 
 
   .form-actions
     = f.button :submit

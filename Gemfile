@@ -58,6 +58,7 @@ group :development, :test do
   gem "pry-doc"
   gem "rails-i18n"
   gem "devise"
+  gem 'jquery-rails'
   gem "cocoon"
 end
 

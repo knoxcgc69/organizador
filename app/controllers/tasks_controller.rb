@@ -85,7 +85,7 @@ class TasksController < ApplicationController
         :description,
         :due_date, 
         :category_id,
-        participating_users: 
+        participating_users_attributes: 
           [
             :user_id,
             :role,
